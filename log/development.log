@@ -432,3 +432,633 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-09 10:19:22 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 10:47:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#index as HTML
+  [1m[35mTweet Load (0.7ms)[0m  SELECT "tweets".* FROM "tweets"
+  Rendered tweets/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 4009ms (Views: 3990.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/auth/twitter" for ::1 at 2015-05-09 10:47:53 -0400
+
+
+Started GET "/auth/twitter/callback?oauth_token=hXGqCqWjDnz5RNkO6i9fyRB6T1dyuFn0&oauth_verifier=8F6j2Q7qHmM2IuMNVIEqsjoFc0RYKA14" for ::1 at 2015-05-09 10:49:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter/callback"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (75.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 10:53:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#index as HTML
+  [1m[35mTweet Load (0.7ms)[0m  SELECT "tweets".* FROM "tweets"
+  Rendered tweets/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 573ms (Views: 559.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 10:53:58 -0400
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/twitter" for ::1 at 2015-05-09 10:54:15 -0400
+
+
+Started GET "/auth/twitter/callback?oauth_token=JX4WRN66u2jiCXcM4OnOG1osR7AO3zz1&oauth_verifier=88RmqLnM5vdzTuBcYPERJYLdHZz8umgf" for ::1 at 2015-05-09 10:54:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"JX4WRN66u2jiCXcM4OnOG1osR7AO3zz1", "oauth_verifier"=>"88RmqLnM5vdzTuBcYPERJYLdHZz8umgf", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (exception class/object expected):
+  app/controllers/sessions_controller.rb:3:in `raise'
+  app/controllers/sessions_controller.rb:3:in `create'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (33.1ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (78.3ms)
+
+
+Started PUT "/auth/twitter/console/repl_sessions/5ee192b6b49dd6d7ce185942eb646f3c" for ::1 at 2015-05-09 10:54:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150509150226)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "token" varchar, "secret" varchar, "profile_image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150509150226"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/auth/twitter" for ::1 at 2015-05-09 11:09:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/auth/twitter/callback?oauth_token=5zxhMrCOFgkjlsVlKLXPo1I7xSje9xN1&oauth_verifier=zsjNCRAV6LkOyZFbIs6PFJm6rXr8W29Y" for ::1 at 2015-05-09 11:09:44 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"5zxhMrCOFgkjlsVlKLXPo1I7xSje9xN1", "oauth_verifier"=>"zsjNCRAV6LkOyZFbIs6PFJm6rXr8W29Y", "provider"=>"twitter"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "32405018"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("provider", "uid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["provider", "twitter"], ["uid", "32405018"], ["created_at", "2015-05-09 15:09:46.011797"], ["updated_at", "2015-05-09 15:09:46.011797"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "name" = ?, "profile_image" = ?, "token" = ?, "secret" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "lowell mower"], ["profile_image", "http://pbs.twimg.com/profile_images/593389010258530304/h-NJPm5l_normal.jpg"], ["token", "32405018-VXQEj5m4tBmNkT5FzONWnUEduzCMnSIjywOkiyVkt"], ["secret", "jiwbLpHx2YJ45Yi8SCJErCQrmoILzAEuCGu1czsy6CCwc"], ["updated_at", "2015-05-09 15:09:46.095886"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 5.2ms)
+
+TypeError (exception class/object expected):
+  app/controllers/sessions_controller.rb:4:in `raise'
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (32.1ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (167.3ms)
+
+
+Started PUT "/auth/twitter/console/repl_sessions/e903d7fdbf3a08a9154cb265a57acfcc" for ::1 at 2015-05-09 11:10:06 -0400
+
+
+Started GET "/auth/twitter/callback?oauth_token=5zxhMrCOFgkjlsVlKLXPo1I7xSje9xN1&oauth_verifier=zsjNCRAV6LkOyZFbIs6PFJm6rXr8W29Y" for ::1 at 2015-05-09 11:17:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"5zxhMrCOFgkjlsVlKLXPo1I7xSje9xN1", "oauth_verifier"=>"zsjNCRAV6LkOyZFbIs6PFJm6rXr8W29Y", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "32405018"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 11:17:48 -0400
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.7ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 602ms (Views: 596.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+
+
+Started GET "/assets/application.self-05a5d96ef022b7b01c92e5fcaa0717a09b89997c8d81188017c39a57cf6585d5.css?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-09 11:17:49 -0400
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/auth/twitter" for ::1 at 2015-05-09 11:22:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/auth/twitter/callback?oauth_token=szPP52QYO8nvhBq82fQBuEyo4kcO0CXe&oauth_verifier=qsvIPdj6XBCyrfHXi5vrhIuandUC4CLI" for ::1 at 2015-05-09 11:22:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"szPP52QYO8nvhBq82fQBuEyo4kcO0CXe", "oauth_verifier"=>"qsvIPdj6XBCyrfHXi5vrhIuandUC4CLI", "provider"=>"twitter"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "32405018"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["name", "lowellmower"], ["updated_at", "2015-05-09 15:22:48.815919"], ["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 11:22:48 -0400
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.5ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 538ms (Views: 533.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 11:35:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ArgumentError (You need to supply at least one validation):
+  app/models/tweet.rb:4:in `<class:Tweet>'
+  app/models/tweet.rb:1:in `<top (required)>'
+  app/controllers/tweets_controller.rb:7:in `index'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (60.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 11:35:37 -0400
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.6ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (86.6ms)
+Completed 200 OK in 577ms (Views: 571.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/assets/application.self-05a5d96ef022b7b01c92e5fcaa0717a09b89997c8d81188017c39a57cf6585d5.css?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-09 11:35:38 -0400
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:35:41 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (31.3ms)
+  Rendered tweets/new.html.erb within layouts/application (34.4ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18: 
+    19:   <div class="actions">
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb__3806149351451580869_70315491390940'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb__3806149351451580869_70315491390940'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb__993968989637011515_70315532070240'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (88.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (119.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (54.9ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:35:41 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (3.7ms)
+  Rendered tweets/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18: 
+    19:   <div class="actions">
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb__3806149351451580869_70315531286120'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb__3806149351451580869_70315531286120'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb__993968989637011515_70315531045340'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (36.3ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:36:57 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (6.0ms)
+  Rendered tweets/new.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18: 
+    19:   <div class="actions">
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb__3806149351451580869_70315531286120'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb__3806149351451580869_70315531286120'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb__993968989637011515_70315531045340'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (25.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.6ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:37:48 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (4.9ms)
+  Rendered tweets/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18:   <div class="actions">
+    19:     <%= f.submit %>
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb__3806149351451580869_70315500966680'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb__3806149351451580869_70315500966680'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb__993968989637011515_70315531045340'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.4ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:38:31 -0400
+Processing by TweetsController#new as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms)
+
+RuntimeError (In order to use respond_with, first you need to declare the formats your controller responds to in the class level.):
+  app/controllers/tweets_controller.rb:18:in `new'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (57.4ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:39:16 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (5.6ms)
+  Rendered tweets/new.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18:   <div class="actions">
+    19:     <%= f.submit %>
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb__3806149351451580869_70315500966680'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb__3806149351451580869_70315500966680'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb__993968989637011515_70315531045340'
+  app/controllers/tweets_controller.rb:17:in `new'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.8ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (44.9ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:42:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (35.6ms)
+  Rendered tweets/new.html.erb within layouts/application (44.0ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18:   <div class="actions">
+    19:     <%= f.submit %>
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb___2697714977015681013_70095978389420'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb___2697714977015681013_70095978389420'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb___610819179621142189_70095977922860'
+  app/controllers/tweets_controller.rb:17:in `new'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.7ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (61.2ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:43:58 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (3.9ms)
+  Rendered tweets/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18:   <div class="actions">
+    19:     <%= f.submit %>
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb___2697714977015681013_70096002025700'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb___2697714977015681013_70096002025700'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb___610819179621142189_70095977922860'
+  app/controllers/tweets_controller.rb:17:in `new'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (76.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.9ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (27.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.4ms)
+
+
+Started PUT "/tweets/console/repl_sessions/0aa939726ab26d11e0448ed6caebb9d7" for ::1 at 2015-05-09 11:44:11 -0400
+
+
+Started PUT "/tweets/console/repl_sessions/0aa939726ab26d11e0448ed6caebb9d7" for ::1 at 2015-05-09 11:44:23 -0400
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 11:46:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (31.1ms)
+  Rendered tweets/new.html.erb within layouts/application (38.6ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `body' for #<Tweet id: nil, created_at: nil, updated_at: nil>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :body %><br>
+    16:     <%= f.text_area :body %>
+    17:   </div>
+    18:   <div class="actions">
+    19:     <%= f.submit %>
+  app/views/tweets/_form.html.erb:16:in `block in _app_views_tweets__form_html_erb__2312302814468144723_70287261603980'
+  app/views/tweets/_form.html.erb:1:in `_app_views_tweets__form_html_erb__2312302814468144723_70287261603980'
+  app/views/tweets/new.html.erb:3:in `_app_views_tweets_new_html_erb___54102764778620939_70287244978640'
+  app/controllers/tweets_controller.rb:17:in `new'
+
+
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (66.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.2ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lowellmower/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (55.8ms)
+
+
+Started PUT "/tweets/console/repl_sessions/c60a92a945b6f6ecac53827a58a25d3e" for ::1 at 2015-05-09 11:46:59 -0400
+
+
+Started PUT "/tweets/console/repl_sessions/c60a92a945b6f6ecac53827a58a25d3e" for ::1 at 2015-05-09 11:47:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBodyUseridToTweet (20150509155953)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "tweets" ADD "body" text[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "tweets" ADD "user_id" integer
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150509155953"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-05-09 12:06:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 647ms (Views: 624.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tweets/new" for ::1 at 2015-05-09 12:06:33 -0400
+Processing by TweetsController#new as HTML
+  Rendered tweets/_form.html.erb (26.5ms)
+  Rendered tweets/new.html.erb within layouts/application (32.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 102ms (Views: 95.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tweets" for ::1 at 2015-05-09 12:07:05 -0400
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tq86H3uEhtZRaHiqSEthwgOymdqWTYnQACHyKNRTmdyNvdX8F6kdRkTe7RZOSZol0v06TriObAqfXP3nq2kmrQ==", "tweet"=>{"body"=>"Just sending a test tweet out from my webapp, no biggie."}, "commit"=>"Create Tweet"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "tweets" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Just sending a test tweet out from my webapp, no biggie."], ["user_id", 1], ["created_at", "2015-05-09 16:07:05.816521"], ["updated_at", "2015-05-09 16:07:05.816521"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tweets/1
+Completed 302 Found in 571ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/tweets/1" for ::1 at 2015-05-09 12:07:06 -0400
+Processing by TweetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTweet Load (0.2ms)[0m  SELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tweets/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweets/1" for ::1 at 2015-05-09 12:07:17 -0400
+Processing by TweetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTweet Load (0.1ms)[0m  SELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tweets/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tweets" for ::1 at 2015-05-09 12:07:27 -0400
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 132ms (Views: 129.8ms | ActiveRecord: 0.3ms)
